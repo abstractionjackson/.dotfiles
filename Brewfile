@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+# Filesystem navigation upgrade
+brew "exa"
 # Distributed revision control system
 brew "git"
 # Manage multiple Node.js versions
