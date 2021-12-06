@@ -13,3 +13,6 @@ brew bundle
 ```
 That pretty much installs everything in ```Brewfile```, so edit what you want to add or remove. Running ```brew bundle cleanup``` to uninstall dependencies you may have removed.
 3. run ```./install.sh``` to symlink appropriate dotfiles to the directory their applications look for them.
+
+## TODO
+- Encapsulate the brew install step in repo install.sh, then use brew ```bundle``` to programatically install formulae, casks, taps
