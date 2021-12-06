@@ -1,0 +1,24 @@
+[user]
+	name = Jackson Galan
+	email = 47265694+abstractionjackson@users.noreply.github.com 
+[core]
+	autocrlf = input
+	safecrlf = true
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
